@@ -7,17 +7,16 @@ A aplicação consome dados da **Fake Store API** e simula uma experiência real
 
 ## 📸 Preview
 > Interface moderna, leve e responsiva, com foco em usabilidade e organização visual.
-> ### Login
-![Login](<img width="1365" height="592" alt="Captura de tela 2026-01-29 105027" src="https://github.com/user-attachments/assets/1ab89596-055d-421b-a0fb-34b387db1c2f" />
-)
 
-### Dashboard
-![Dashboard](<img width="1365" height="593" alt="Captura de tela 2026-01-29 105047" src="https://github.com/user-attachments/assets/9b77e123-f99f-4c5b-a0da-0d7fd21f212b" />
-)
+### 🔐 Login
+<img width="900" alt="Login" src="https://github.com/user-attachments/assets/4a3ef6f6-d90e-49e8-aa2e-f7ee431e5180" />
 
-### Carrinho
-![Carrinho](<img width="1365" height="594" alt="Captura de tela 2026-01-29 105144" src="https://github.com/user-attachments/assets/6d4423e6-299a-4415-bcc0-a82dac9d8592" />
-)
+### 🏠 Dashboard
+<img width="900" alt="Dashboard" src="https://github.com/user-attachments/assets/0ec2af5e-401d-4ac7-a2d3-44c34a5e02c0" />
+
+### 🛒 Carrinho
+<img width="900" alt="Carrinho" src="https://github.com/user-attachments/assets/c010486f-917b-487d-ba47-5309963400d3" />
+
 
 ---
 
