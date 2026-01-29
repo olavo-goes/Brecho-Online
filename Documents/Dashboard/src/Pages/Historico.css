@@ -1,0 +1,41 @@
+.historico-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.historico-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #8b4513;
+}
+
+.historico-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.historico-card p {
+  margin: 0.3rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.historico-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.historico-card h4 {
+  margin-top: 1rem;
+  text-align: right;
+  color: #d35400;
+}

@@ -1,0 +1,49 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* fundo branco */
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  border-bottom: 3px solid #e67e22; /* barra laranja estilo brechó */
+  color: #333;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  border-top: 3px solid #e67e22; /* barra laranja */
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Classe que esconde elementos */
+.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.footer.hidden {
+  transform: translateY(100%);
+  opacity: 0;
+}

@@ -1,0 +1,130 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* fundo branco */
+  color: #333;
+}
+
+/* Container centralizado */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #ffffff; /* fundo branco */
+}
+
+/* Card de login */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff; /* fundo branco no card */
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Título */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #8b4513; /* marrom estilo vintage */
+}
+
+/* Campos */
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  color: #333;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.form-group input:focus {
+  border-color: #e67e22; /* laranja queimado */
+  box-shadow: 0 0 6px rgba(230, 126, 34, 0.4);
+  outline: none;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ff7f50, #e67e22); /* coral + laranja */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(230, 126, 34, 0.3);
+}
+
+/* Mensagem de boas-vindas */
+.welcome {
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.welcome h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #8b4513;
+}
+
+.welcome p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 2rem;
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem;
+  }
+}

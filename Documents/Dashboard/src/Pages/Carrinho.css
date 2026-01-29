@@ -1,0 +1,176 @@
+/* Container principal do carrinho */
+.carrinho-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Título */
+.carrinho-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #8b4513; /* marrom vintage */
+}
+
+/* Item do carrinho */
+.carrinho-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.carrinho-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Imagem do produto */
+.carrinho-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Info do produto */
+.carrinho-item h4 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.carrinho-item p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Ações do item (comprar + remover) */
+.carrinho-item-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* Botão COMPRAR (amarelo) */
+.btn-comprar-item {
+  background-color: #f0e68c; /* amarelo mostarda */
+  color: #333;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-comprar-item:hover {
+  background-color: #e6d87a;
+  transform: translateY(-2px);
+}
+
+/* Botão REMOVER (vermelho) */
+.btn-remover {
+  background-color: #e74c3c; /* vermelho */
+  color: #fff;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-remover:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Total */
+.carrinho-container h3 {
+  text-align: right;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #d35400; /* laranja queimado */
+}
+
+/* Ações do carrinho (limpar + finalizar) */
+.carrinho-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Botões gerais do carrinho */
+.carrinho-actions button {
+  flex: 1;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Limpar carrinho */
+.carrinho-actions button:first-child {
+  background-color: #f0e68c;
+  color: #333;
+}
+
+.carrinho-actions button:first-child:hover {
+  background-color: #e6d87a;
+  transform: translateY(-2px);
+}
+
+/* Finalizar compra */
+.btn-finalizar {
+  background: linear-gradient(135deg, #ff7f50, #e67e22);
+  color: #fff;
+}
+
+.btn-finalizar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 126, 34, 0.35);
+}
+
+/* Carrinho vazio */
+.carrinho-vazio {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #777;
+  margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .carrinho-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carrinho-item-actions {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 0.6rem;
+  }
+
+  .carrinho-actions {
+    flex-direction: column;
+  }
+
+  .carrinho-container h3 {
+    text-align: center;
+  }
+}
